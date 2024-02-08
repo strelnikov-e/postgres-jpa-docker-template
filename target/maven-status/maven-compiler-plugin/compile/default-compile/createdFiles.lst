@@ -1,0 +1,7 @@
+com/stelnikov/postgresjpa/domain/domain/Author.class
+com/stelnikov/postgresjpa/repository/repository/AuthorRepository.class
+com/stelnikov/postgresjpa/repository/repository/BookRepository.class
+com/stelnikov/postgresjpa/PostgresJpaApplication.class
+com/stelnikov/postgresjpa/controller/controller/BookController.class
+com/stelnikov/postgresjpa/controller/controller/AuthorController.class
+com/stelnikov/postgresjpa/domain/domain/Book.class

@@ -1,0 +1,7 @@
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/domain/domain/Author.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/controller/controller/AuthorController.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/domain/domain/Book.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/PostgresJpaApplication.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/controller/controller/BookController.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/repository/repository/BookRepository.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/main/java/com/stelnikov/postgresjpa/repository/repository/AuthorRepository.java

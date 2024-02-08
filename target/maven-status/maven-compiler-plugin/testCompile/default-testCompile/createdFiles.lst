@@ -1,0 +1,4 @@
+com/stelnikov/postgresjpa/repository/BookRepositoryIntegrationTest.class
+com/stelnikov/postgresjpa/repository/AuthorDaoImplIntegrationTest.class
+com/stelnikov/postgresjpa/TestDataUtil.class
+com/stelnikov/postgresjpa/PostgresJpaApplicationTests.class
