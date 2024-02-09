@@ -1,4 +1,4 @@
-package com.stelnikov.postgresjpa.domain.domain;
+package com.stelnikov.postgresjpa.domain.entity;
 
 import jakarta.persistence.*;
 

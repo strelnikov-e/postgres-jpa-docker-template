@@ -1,8 +1,8 @@
 package com.stelnikov.postgresjpa;
 
 
-import com.stelnikov.postgresjpa.domain.domain.Author;
-import com.stelnikov.postgresjpa.domain.domain.Book;
+import com.stelnikov.postgresjpa.domain.entity.Author;
+import com.stelnikov.postgresjpa.domain.entity.Book;
 
 public class TestDataUtil {
 

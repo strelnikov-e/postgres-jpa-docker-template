@@ -1,6 +1,6 @@
-package com.stelnikov.postgresjpa.repository.repository;
+package com.stelnikov.postgresjpa.repository;
 
-import com.stelnikov.postgresjpa.domain.domain.Book;
+import com.stelnikov.postgresjpa.domain.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

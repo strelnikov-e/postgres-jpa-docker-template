@@ -1,9 +1,8 @@
 package com.stelnikov.postgresjpa.repository;
 
 import com.stelnikov.postgresjpa.TestDataUtil;
-import com.stelnikov.postgresjpa.domain.domain.Author;
-import com.stelnikov.postgresjpa.domain.domain.Book;
-import com.stelnikov.postgresjpa.repository.repository.BookRepository;
+import com.stelnikov.postgresjpa.domain.entity.Author;
+import com.stelnikov.postgresjpa.domain.entity.Book;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.stelnikov.postgresjpa.controller.controller;
+package com.stelnikov.postgresjpa.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
