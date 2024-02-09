@@ -20,4 +20,16 @@ class AuthorMapperTest {
         assertThat(authorDto.getAge()).isEqualTo(author.getAge());
     }
 
+    @Test
+    public void shouldMapAuthorDtoToAuthor() {
+        Author author = TestDataUtil.createTestAuthorA();
+        AuthorDto authorDto = AuthorMapper.INSTANCE.toAuthorDto(author);
+        Author test = AuthorMapper.INSTANCE.toAuthor(authorDto);
+
+        assertThat(test).isNotNull();
+        assertThat(test.getId()).isEqualTo(authorDto.getId());
+        assertThat(test.getName()).isEqualTo(authorDto.getName());
+        assertThat(test.getAge()).isEqualTo(authorDto.getAge());
+    }
+
 }

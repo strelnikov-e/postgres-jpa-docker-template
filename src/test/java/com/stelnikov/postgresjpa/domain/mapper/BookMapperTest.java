@@ -22,4 +22,18 @@ class BookMapperTest {
         assertThat(bookDto.getAuthor().getId()).isEqualTo(book.getAuthor().getId());
     }
 
+    @Test
+    public void shouldMapBookDtoToBook() {
+        Author author = TestDataUtil.createTestAuthorA();
+        Book book = TestDataUtil.createTestBookA(author);
+
+        BookDto bookDto = BookMapper.INSTANCE.toBookDto(book);
+        Book toTest = BookMapper.INSTANCE.toBook(bookDto);
+
+        assertThat(toTest).isNotNull();
+        assertThat(toTest.getIsbn()).isEqualTo(bookDto.getIsbn());
+        assertThat(toTest.getTitle()).isEqualTo(bookDto.getTitle());
+        assertThat(toTest.getAuthor().getId()).isEqualTo(bookDto.getAuthor().getId());
+    }
+
 }

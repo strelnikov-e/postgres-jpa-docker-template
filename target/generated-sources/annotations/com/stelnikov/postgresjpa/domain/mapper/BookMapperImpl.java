@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-02-08T19:17:55-0500",
+    date = "2024-02-08T19:39:59-0500",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 19 (Oracle Corporation)"
 )
 public class BookMapperImpl implements BookMapper {
@@ -24,5 +24,20 @@ public class BookMapperImpl implements BookMapper {
         bookDto.setAuthor( book.getAuthor() );
 
         return bookDto;
+    }
+
+    @Override
+    public Book toBook(BookDto bookDto) {
+        if ( bookDto == null ) {
+            return null;
+        }
+
+        Book book = new Book();
+
+        book.setIsbn( bookDto.getIsbn() );
+        book.setTitle( bookDto.getTitle() );
+        book.setAuthor( bookDto.getAuthor() );
+
+        return book;
     }
 }

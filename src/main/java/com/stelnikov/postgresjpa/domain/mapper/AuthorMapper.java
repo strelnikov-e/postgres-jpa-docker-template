@@ -11,4 +11,6 @@ public interface AuthorMapper {
     AuthorMapper INSTANCE = Mappers.getMapper(AuthorMapper.class);
 
     AuthorDto toAuthorDto(Author author);
+
+    Author toAuthor(AuthorDto authorDto);
 }
