@@ -1,19 +1,17 @@
 package com.stelnikov.postgresjpa.domain.dto;
 
-import com.stelnikov.postgresjpa.domain.entity.Author;
-
 import java.util.Objects;
 
 public class BookDto {
 
     private String isbn;
     private String title;
-    private Author author;
+    private AuthorDto author;
 
     public BookDto() {
     }
 
-    public BookDto(String isbn, String title, Author author) {
+    public BookDto(String isbn, String title, AuthorDto author) {
         this.isbn = isbn;
         this.title = title;
         this.author = author;
@@ -35,11 +33,11 @@ public class BookDto {
         this.title = title;
     }
 
-    public Author getAuthor() {
+    public AuthorDto getAuthor() {
         return author;
     }
 
-    public void setAuthor(Author author) {
+    public void setAuthor(AuthorDto author) {
         this.author = author;
     }
 
