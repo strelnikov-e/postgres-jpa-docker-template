@@ -3,6 +3,8 @@ package com.stelnikov.postgresjpa.controller;
 import com.stelnikov.postgresjpa.domain.dto.AuthorDto;
 import com.stelnikov.postgresjpa.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,8 +29,8 @@ public class AuthorController {
     }
 
     @GetMapping
-    public List<AuthorDto> getAll() {
-        return authorService.findAll();
+    public Page<AuthorDto> getAll(Pageable pageable) {
+        return authorService.findAll(pageable);
     }
 
     @GetMapping("/{id}")
