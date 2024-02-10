@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest" time="0.579" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.002" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -48,7 +48,7 @@
     <property name="localRepository" value="/Users/strelnikov/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/t3/yx180bgx5s1gbfyxr7_1n1v40000gn/T/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="7"/>
+    <property name="com.zaxxer.hikari.pool_number" value="23"/>
     <property name="java.version" value="19.0.2"/>
     <property name="user.dir" value="/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa"/>
     <property name="os.arch" value="aarch64"/>
@@ -65,93 +65,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testThatBookCanBeUpdated" classname="com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest" time="0.019">
-    <system-out><![CDATA[2024-02-09T23:09:42.863-05:00  INFO 42858 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest]: BookRepositoryIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-09T23:09:42.863-05:00  INFO 42858 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.stelnikov.postgresjpa.PostgresJpaApplication for test class com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.2)
-
-2024-02-09T23:09:42.873-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Starting BookRepositoryIntegrationTest using Java 19.0.2 with PID 42858 (started by strelnikov in /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa)
-2024-02-09T23:09:42.873-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
-2024-02-09T23:09:42.924-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-09T23:09:42.929-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
-2024-02-09T23:09:42.955-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2024-02-09T23:09:42.957-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn23: url=jdbc:h2:mem:testdb:MODE=PostgreSQL user=SA
-2024-02-09T23:09:42.957-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2024-02-09T23:09:42.957-05:00  INFO 42858 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-09T23:09:42.958-05:00  INFO 42858 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-09T23:09:42.959-05:00  INFO 42858 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-09T23:09:42.978-05:00  INFO 42858 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-09T23:09:42.980-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.015-05:00  WARN 42858 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-09T23:09:43.051-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Started BookRepositoryIntegrationTest in 0.186 seconds (process running for 3.971)
-2024-02-09T23:09:43.066-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.067-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2024-02-09T23:09:43.075-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-]]></system-out>
-  </testcase>
-  <testcase name="testThatBookCanBeCreatedAndRecalled" classname="com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest" time="0.011">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.2)
-
-2024-02-09T23:09:43.085-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Starting BookRepositoryIntegrationTest using Java 19.0.2 with PID 42858 (started by strelnikov in /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa)
-2024-02-09T23:09:43.085-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
-2024-02-09T23:09:43.131-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-09T23:09:43.136-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
-2024-02-09T23:09:43.160-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2024-02-09T23:09:43.162-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn25: url=jdbc:h2:mem:testdb:MODE=PostgreSQL user=SA
-2024-02-09T23:09:43.162-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2024-02-09T23:09:43.162-05:00  INFO 42858 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-09T23:09:43.163-05:00  INFO 42858 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-09T23:09:43.164-05:00  INFO 42858 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-09T23:09:43.181-05:00  INFO 42858 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-09T23:09:43.183-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.217-05:00  WARN 42858 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-09T23:09:43.249-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Started BookRepositoryIntegrationTest in 0.173 seconds (process running for 4.169)
-2024-02-09T23:09:43.259-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.260-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2024-02-09T23:09:43.261-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
-]]></system-out>
-  </testcase>
-  <testcase name="testThatBookCanBeDeleted" classname="com.stelnikov.postgresjpa.repository.BookRepositoryIntegrationTest" time="0.017">
-    <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.2)
-
-2024-02-09T23:09:43.269-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Starting BookRepositoryIntegrationTest using Java 19.0.2 with PID 42858 (started by strelnikov in /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa)
-2024-02-09T23:09:43.269-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
-2024-02-09T23:09:43.313-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-09T23:09:43.317-05:00  INFO 42858 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 2 JPA repository interfaces.
-2024-02-09T23:09:43.341-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2024-02-09T23:09:43.342-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn26: url=jdbc:h2:mem:testdb:MODE=PostgreSQL user=SA
-2024-02-09T23:09:43.343-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2024-02-09T23:09:43.343-05:00  INFO 42858 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-09T23:09:43.344-05:00  INFO 42858 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-09T23:09:43.345-05:00  INFO 42858 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-09T23:09:43.361-05:00  INFO 42858 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-09T23:09:43.364-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.391-05:00  WARN 42858 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-09T23:09:43.422-05:00  INFO 42858 --- [           main] c.s.p.r.BookRepositoryIntegrationTest    : Started BookRepositoryIntegrationTest in 0.16 seconds (process running for 4.342)
-2024-02-09T23:09:43.434-05:00  INFO 42858 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-09T23:09:43.435-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2024-02-09T23:09:43.435-05:00  INFO 42858 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
-]]></system-out>
-  </testcase>
+  <testcase name="findAll" classname="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.0"/>
+  <testcase name="update" classname="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.0"/>
+  <testcase name="findById" classname="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.0"/>
+  <testcase name="isExists" classname="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.0"/>
+  <testcase name="testThatDeleteSuccessfullyReturnHttp204NoContent" classname="com.stelnikov.postgresjpa.service.AuthorServiceImplTest" time="0.001"/>
 </testsuite>

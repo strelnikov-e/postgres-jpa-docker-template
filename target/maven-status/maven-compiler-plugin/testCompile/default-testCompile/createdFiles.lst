@@ -1,4 +1,9 @@
-com/stelnikov/postgresjpa/repository/BookRepositoryIntegrationTest.class
+com/stelnikov/postgresjpa/controller/BookControllerIntegrationTest.class
 com/stelnikov/postgresjpa/repository/AuthorDaoImplIntegrationTest.class
+com/stelnikov/postgresjpa/domain/mapper/AuthorMapperTest.class
+com/stelnikov/postgresjpa/service/AuthorServiceImplTest.class
+com/stelnikov/postgresjpa/repository/BookRepositoryIntegrationTest.class
+com/stelnikov/postgresjpa/controller/AuthorControllerIntegrationTest.class
 com/stelnikov/postgresjpa/TestDataUtil.class
 com/stelnikov/postgresjpa/PostgresJpaApplicationTests.class
+com/stelnikov/postgresjpa/domain/mapper/BookMapperTest.class

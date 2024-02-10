@@ -60,8 +60,6 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorDto partialUpdate(Long id, AuthorDto authorDto) {
         authorDto.setId(id);
         AuthorDto result = findById(id);
-        System.out.println(result);
-        System.out.println("DTO: " + authorDto);
         Optional.ofNullable(authorDto.getName()).ifPresent(result::setName);
         Optional.ofNullable(authorDto.getAge()).ifPresent(result::setAge);
 

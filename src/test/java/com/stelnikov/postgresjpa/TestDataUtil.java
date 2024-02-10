@@ -46,15 +46,15 @@ public class TestDataUtil {
         return new Book("333-3-333-3000-0", "Book Three", author);
     }
 
-    public static BookDto createTestBookDTOA(final Author author) {
+    public static BookDto createTestBookDTOA(final AuthorDto author) {
         return new BookDto("111-1-111-1000-0", "Book One", author);
     }
 
-    public static BookDto createTestBooDTOkB(final Author author) {
+    public static BookDto createTestBooDTOkB(final AuthorDto author) {
         return new BookDto("222-2-222-2000-0", "Book Two", author);
     }
 
-    public static BookDto createTestBookDTOC(final Author author) {
+    public static BookDto createTestBookDTOC(final AuthorDto author) {
         return new BookDto("333-3-333-3000-0", "Book Three", author);
     }
 }

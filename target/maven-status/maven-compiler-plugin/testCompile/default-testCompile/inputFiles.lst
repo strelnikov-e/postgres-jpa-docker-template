@@ -1,4 +1,9 @@
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/controller/BookControllerIntegrationTest.java
 /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/TestDataUtil.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/domain/mapper/AuthorMapperTest.java
 /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/repository/AuthorDaoImplIntegrationTest.java
 /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/repository/BookRepositoryIntegrationTest.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/service/AuthorServiceImplTest.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/domain/mapper/BookMapperTest.java
+/Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/controller/AuthorControllerIntegrationTest.java
 /Users/strelnikov/Documents/dev/my-java/Templates/postgres-jpa/src/test/java/com/stelnikov/postgresjpa/PostgresJpaApplicationTests.java
