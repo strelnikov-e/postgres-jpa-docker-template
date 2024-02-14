@@ -2,10 +2,20 @@ version: '3.1'
 
 services:
 
-  db:
+  pgdb:
     image: postgres
+    container_name: pgdb
+    hostname: pgdb
     ports:
       - "5430:5432"
     restart: always
     environment:
       POSTGRES_PASSWORD: changemeinprod!
+
+  api:
+    image: evstrelnikov/pgapi:2
+    container_name: api
+    hostname: api
+    ports:
+      - "8080:8080"
+    restart: always

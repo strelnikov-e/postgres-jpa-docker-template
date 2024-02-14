@@ -5,12 +5,14 @@ import com.stelnikov.postgresjpa.domain.dto.BookDto;
 import com.stelnikov.postgresjpa.domain.entity.Author;
 import com.stelnikov.postgresjpa.domain.entity.Book;
 import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-02-09T23:59:41-0500",
+    date = "2024-02-13T21:17:38-0500",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 19.0.2 (Homebrew)"
 )
+@Component
 public class BookMapperImpl implements BookMapper {
 
     @Override
